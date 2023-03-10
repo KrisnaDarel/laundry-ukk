@@ -50,8 +50,8 @@ class MemberController extends Controller
         // ]);
 
         $this->validate($request , [
-            'nama' => 'required|alpha|max:255',
-            'alamat' => 'required|alpha|max:255',
+            'nama' => 'required|max:255',
+            'alamat' => 'required|max:255',
             'jenis_kelamin' => 'required',
             'telepon' => 'required|numeric'
 
@@ -102,8 +102,8 @@ class MemberController extends Controller
         $member->update($data);
 
         $this->validate($request , [
-            'nama' => 'required|alpha|max:255',
-            'alamat' => 'required|alpha|max:255',
+            'nama' => 'required|max:255',
+            'alamat' => 'required|max:255',
             'jenis_kelamin' => 'required',
             'telepon' => 'required|numeric'
 
